@@ -1,9 +1,11 @@
-import { Outlet } from 'react-router-dom';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '@/core/lib/queryClient';
+import { AppRouter } from './router';
 
 export const App = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Outlet />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <AppRouter />
+    </QueryClientProvider>
   );
 };

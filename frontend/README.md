@@ -1,12 +1,12 @@
 # NoteBox
 
-Quick notes application built with React, TypeScript, and TailwindCSS.
+Lightweight app for quick notes with search and tag categorization.
 
 ## Features
 
 - Create quick notes with title and content
 - Search and categorize notes with tags
-- Clean and minimal interface
+- Clean and intuitive interface
 
 ## Tech Stack
 
@@ -36,69 +36,19 @@ Quick notes application built with React, TypeScript, and TailwindCSS.
 npm install
 ```
 
-3. Create `.env` file from `.env.example`:
+3. Copy `.env.example` to `.env` and configure:
 
 ```bash
 cp .env.example .env
 ```
 
-4. Update environment variables in `.env` if needed
-
-### Development
-
-Start the development server:
+4. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
-
-### Build
-
-Build for production:
-
-```bash
-npm run build
-```
-
-### Preview
-
-Preview production build:
-
-```bash
-npm run preview
-```
-
-## Project Structure
-
-```
-src/
-├── app/                    # Application configuration
-│   ├── App.tsx            # Root component
-│   └── router.tsx         # Routing configuration
-├── assets/                # Static assets
-│   └── styles/           # Global styles
-├── core/                  # Core functionality
-│   ├── components/       # Shared components
-│   ├── lib/              # Library configurations
-│   ├── types/            # Global types
-│   └── utils/            # Utility functions
-├── domain/               # Business domains (to be added)
-├── pages/                # Page components
-│   └── Home/            # Home page
-└── main.tsx             # Application entry point
-```
-
-## API Configuration
-
-The application connects to a backend API. Configure the API URL in `.env`:
-
-```
-VITE_API_URL=http://localhost:3000
-VITE_API_VERSION=v1
-VITE_API_TIMEOUT=30000
-```
+5. Open http://localhost:5173 in your browser
 
 ## Available Scripts
 
@@ -107,6 +57,37 @@ VITE_API_TIMEOUT=30000
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
+## Project Structure
+
+```
+src/
+├── app/                 # Application configuration
+│   ├── App.tsx         # Root component
+│   └── router.tsx      # Routing configuration
+├── assets/             # Static assets
+│   └── styles/         # Global styles
+├── core/               # Core components and utilities
+│   ├── components/     # Shared components
+│   ├── lib/           # Library configurations
+│   └── utils/         # Utility functions
+├── domain/            # Business domains
+├── pages/             # Page components
+│   ├── layouts/       # Layout components
+│   ├── Home/          # Home page
+│   └── NotFound/      # 404 page
+└── main.tsx           # Application entry point
+```
+
+## API Configuration
+
+The app connects to a backend API. Configure the API URL in `.env`:
+
+```
+VITE_API_URL=http://localhost:3000
+VITE_API_VERSION=v1
+VITE_API_TIMEOUT=30000
+```
+
 ## License
 
-Private project
+MIT
