@@ -5,8 +5,7 @@
  * @module routes
  *
  * @description
- * Configures API versioning and routes requests to appropriate version handlers.
- * Supports multiple API versions for backward compatibility.
+ * Configures API versioning and routes all requests to appropriate version handlers
  */
 
 import { Router } from 'express';

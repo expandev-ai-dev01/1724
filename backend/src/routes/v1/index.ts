@@ -5,7 +5,7 @@
  * @module routes/v1
  *
  * @description
- * Configures version 1 API routes, separating external (public) and internal (authenticated) endpoints.
+ * Configures external (public) and internal (authenticated) routes for API version 1
  */
 
 import { Router } from 'express';

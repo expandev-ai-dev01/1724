@@ -5,7 +5,7 @@
  * @module middleware
  *
  * @description
- * Centralizes all middleware exports for easy import throughout the application.
+ * Centralizes all middleware exports for easy importing
  */
 
 export * from './error';

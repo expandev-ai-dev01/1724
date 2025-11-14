@@ -5,8 +5,7 @@
  * @module routes/v1/internalRoutes
  *
  * @description
- * Defines authenticated API endpoints that require valid user credentials.
- * All routes in this module are protected by authentication middleware.
+ * Defines all authenticated API endpoints requiring user authentication
  */
 
 import { Router } from 'express';

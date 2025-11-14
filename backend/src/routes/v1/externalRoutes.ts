@@ -5,8 +5,7 @@
  * @module routes/v1/externalRoutes
  *
  * @description
- * Defines public API endpoints that do not require authentication.
- * Includes health checks and public information endpoints.
+ * Defines all public API endpoints that do not require authentication
  */
 
 import { Router } from 'express';

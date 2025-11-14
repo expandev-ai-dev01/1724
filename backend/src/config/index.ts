@@ -1,12 +1,12 @@
 /**
  * @summary
- * Application configuration management
+ * Application configuration management with environment variable support
  *
  * @module config
  *
  * @description
- * Centralizes all environment-based configuration settings for the application.
- * Provides type-safe access to database, API, security, and cache configurations.
+ * Centralizes all application configuration including database, API, security,
+ * and cache settings with proper defaults and environment variable overrides
  */
 
 export const config = {

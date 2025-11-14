@@ -5,7 +5,7 @@
  * @module utils
  *
  * @description
- * Centralizes all utility function exports for easy import throughout the application.
+ * Centralizes all utility exports for easy importing
  */
 
-export * from './response';
+export * from './zodValidation';
