@@ -5,14 +5,16 @@
  * @module routes/v1/internalRoutes
  *
  * @description
- * Defines all authenticated API endpoints requiring user authentication
+ * Defines authenticated API endpoints that require valid user credentials.
+ * All routes in this module are protected by authentication middleware.
  */
 
 import { Router } from 'express';
+import * as noteController from '@/api/v1/internal/note/controller';
 
 const router = Router();
 
-// Internal routes will be added here as features are implemented
-// Example: router.use('/note', noteRoutes);
+// Note routes
+router.post('/note', noteController.postHandler);
 
 export default router;
